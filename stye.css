@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -21,7 +19,6 @@ body {
 .gradient {
     /* background-image: linear-gradient(30deg, #ffa500, #5cff3f, #696969); */
     background-image: linear-gradient(-45deg, #FF66CC, #e73c7e, #23a6d5, #FFA500);
-
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -38,18 +35,15 @@ body {
 
 .pt-92 {
     padding-top: 92px;
-
 }
 
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
@@ -80,7 +74,6 @@ input[type=text] {
 
 label {
     /* padding: 12px 12px 12px 0; */
-
     display: inline-block;
 }
 
@@ -147,7 +140,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-
 .col-25 {
     /* float: left; */
     width: 25%;
@@ -167,6 +159,7 @@ input[type=submit]:hover {
 }
 
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -174,32 +167,50 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
 
-    .col-25,
-    .col-75,
-    input[type=submit] {
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
-
     .main_row {
-
         flex-direction: column;
     }
-
     .container1 {
         width: 90%;
         margin-bottom: 20px;
         margin-left: 0px !important;
     }
-
     form {
         width: auto;
     }
-
     .pt-92 {
-        margin-right: auto;
+        margin: auto;
     }
+    form {
+        width: 100%
+    }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+    
+        .wSm50{
+            width: 49% !important;
+            
+    }
+    .col-75 {
+        width: 50% !important;
+    }
+    .main_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 95%;
+        margin: auto;
+
+    }
+    .mInpad{
+        margin: auto;
+    }
 }
