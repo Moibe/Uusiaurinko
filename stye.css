@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -41,15 +42,18 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
 
-form {
+form,
+.form {
     width: 400px;
 }
 
@@ -77,16 +81,30 @@ label {
     display: inline-block;
 }
 
+.lb {
+    line-break: anywhere;
+}
+
 .flex {
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-/* .scene {
-    background-color: #d1d8e0;
-    height: 100vh;
-  } */
+.button-center {
+    /* display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 130px; */
+
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    top: 145%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .button {
     background: none;
@@ -121,9 +139,11 @@ label {
     width: 400px;
     height: 400px;
     z-index: -1;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    /* border: solid; */
 }
 
 input[type=submit] {
@@ -168,39 +188,50 @@ input[type=submit]:hover {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+@media screen and (max-width: 767px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+
     .main_row {
         flex-direction: column;
     }
+
     .container1 {
         width: 90%;
         margin-bottom: 20px;
         margin-left: 0px !important;
     }
+
     form {
         width: auto;
     }
+
     .pt-92 {
         margin: auto;
     }
-    form {
+
+    form,
+    .form {
         width: 100%
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1224px) {
-    
-        .wSm50{
-            width: 49% !important;
-            
+
+    .wSm50 {
+        width: 49% !important;
+
     }
+
     .col-75 {
         width: 50% !important;
     }
+
     .main_row {
         display: flex;
         justify-content: center;
@@ -210,7 +241,8 @@ input[type=submit]:hover {
         margin: auto;
 
     }
-    .mInpad{
+
+    .mInpad {
         margin: auto;
     }
 }
