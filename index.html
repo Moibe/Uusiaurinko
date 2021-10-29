@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css">
 </head>
 
-<body class="gradient">
+<body id="body" class="gradient">
+    <div class="row addrow2 main_row" >
+    </div>
     <div class="main_row">
         <div class="container1 d-flex wSm50">
+            <div id="formText" >My Form Version A</div>
             <div>
                 <form action="#">
                     <div class="row">
@@ -34,14 +37,6 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label for="lname">City</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="cityOne" placeholder="Your city.." oninput="myInputThree(this)">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
                             <label for="lname">Number</label>
                         </div>
                         <div class="col-75">
@@ -55,6 +50,8 @@
             </div>
         </div>
         <div class="container1 d-flex w-20 wSm50" style="margin-left: 14px;">
+        <div style="" class="buttonDIvOpt"><button type="button" class="optionOne btn-primary" id="buttonOption" onclick="optionButton(this)">Option A</button></div>
+
             <div>
                 <div class="form" action="">
                     <div class="row">
