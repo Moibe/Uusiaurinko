@@ -100,7 +100,7 @@ label {
     position: absolute;
     width: 400px;
     height: 400px;
-    z-index: -1;
+    z-index: +11;
     top: 145%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -135,7 +135,7 @@ label {
 }
 
 .confetti__image {
-    position: absolute;
+    position: fixed;
     width: 400px;
     height: 400px;
     z-index: -1;
@@ -189,7 +189,15 @@ input[type=submit]:hover {
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 767px) {
+.labelText{
+    width: 446px !important;
 
+}
+.container1 {
+    padding: 18px;
+    height: 343px;
+
+}
     .col-25,
     .col-75,
     input[type=submit] {
