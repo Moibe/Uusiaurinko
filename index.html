@@ -14,7 +14,7 @@
     <div class="row addrow2 main_row" >
     </div>
     <div class="main_row">
-        <div class="container1 d-flex wSm50">
+        <div id="glass1" class="container1 animate__animated  d-flex wSm50 ">
             <div id="formText" >My Form Version A</div>
             <div>
                 <form action="#">
@@ -23,7 +23,7 @@
                             <label for="fname">First Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="nameOne" placeholder="Your name.." oninput="myInputOne(this)">
+                            <input type="text" id="field1" placeholder="Your name.." oninput="myInputOne(this)">
                         </div>
                     </div>
                     <div class="row">
@@ -31,7 +31,7 @@
                             <label for="lname">Last Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="lastnameOne" placeholder="Your last name.."
+                            <input type="text" id="field2" placeholder="Your last name.."
                                 oninput="myInputTwo(this)">
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <label for="lname">Number</label>
                         </div>
                         <div class="col-75">
-                            <input type="number" id="numberOne" placeholder="Enter Your Number.."
+                            <input type="number" id="field3" placeholder="Enter Your Number.."
                                 oninput="myInputFour(this)">
                         </div>
                     </div>
@@ -49,14 +49,14 @@
                 </form>
             </div>
         </div>
-        <div class="container1 d-flex w-20 wSm50" style="margin-left: 14px;">
-        <div style="" class="buttonDIvOpt"><button type="button" class="optionOne btn-primary" id="buttonOption" onclick="optionButton(this)">Option A</button></div>
+        <div class="container1 d-flex w-20 wSm50 animate__animated  " id="glass2" style="margin-left: 14px;opacity: 0;">
+        <div class="buttonDIvOpt" id="optionDIv"><button type="button" class="optionOne btn-primary" id="buttonOption" onclick="optionButton(this)">Option A</button></div>
 
             <div>
                 <div class="form" action="">
                     <div class="row">
                         <!-- <div class="col-25">
-                            <label for="fname">First Name:</label>
+                            <label for="fname">First animate__bounceInRight Name:</label>
                         </div> -->
                         <div class="col-75 lb" style=" width: 180px;" id="nameText">
                             <!-- <input type="text" placeholder="Your name.."> -->
@@ -70,14 +70,14 @@
                             <!-- <input type="text" placeholder="Your last name.."> -->
                         </div>
                     </div>
-                    <div class="row">
+                     <!-- <div class="row"> -->
                         <!-- <div class="col-25">
                             <label for="lname">City:</label>
                         </div> -->
-                        <div class="col-75 lb" style=" width: 180px;" id="cityText">
+                        <!-- <div class="col-75 lb" style=" width: 180px;" id="cityText"> -->
                             <!-- <input type="text" placeholder="Your city.."> -->
-                        </div>
-                    </div>
+                        <!-- </div>
+                    </div> -->
                     <div class="row">
                         <!-- <div class="col-25">
                             <label for="lname">City:</label>
