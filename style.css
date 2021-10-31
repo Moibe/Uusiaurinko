@@ -226,11 +226,13 @@ input[type=submit]:hover {
         top: -119% !important;
         left: 71% !important;
     }
+
     .buttonDIvOptoveride {
         position: absolute;
         top: -17% !important;
         right: -8% !important;
-    }   
+    }
+
     .btn-primary {
         position: relative !important;
         left: 0% !important;
@@ -490,12 +492,20 @@ section article:last-of-type {
 
 .growing_bar {
     background-color: rgba(236, 0, 140, .6);
-    animation: fill 13s linear 1;
+    /* animation: fill 14s linear 1 !important; */
 }
 
-.growing_barB {
+.growing_barA {
+    background-color: rgba(236, 0, 140, .6);
+}
+
+.growing_barBPurple {
     background-color: purple !important;
-    /* animation: filll 13s linear 1 !important; */
+    animation: filll 14s linear 1 !important;
+}
+
+.growingBarAnimation {
+    background-color: purple !important;
 }
 
 @keyframes fill {
