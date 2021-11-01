@@ -226,13 +226,11 @@ input[type=submit]:hover {
         top: -119% !important;
         left: 71% !important;
     }
-
     .buttonDIvOptoveride {
         position: absolute;
         top: -17% !important;
         right: -8% !important;
-    }
-
+    }   
     .btn-primary {
         position: relative !important;
         left: 0% !important;
@@ -413,6 +411,7 @@ section article:last-of-type {
     width: 100%;
     height: 2em;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .bar .face.side-a,
@@ -474,7 +473,11 @@ section article:last-of-type {
     transition: all 0.3s ease-in-out;
     width: 100%;
     height: 2em;
+    animation:indeterminateAnimation 2s infinite linear;
     height: 100%;
+    transform-origin: 0% 100%;
+    background-color: rgba(236, 0, 140, .6);
+
 }
 
 .btn-primary {
@@ -484,7 +487,6 @@ section article:last-of-type {
     border: 1px solid transparent;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
-
     line-height: 1.5;
     border-radius: 0.6rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -493,8 +495,8 @@ section article:last-of-type {
 .growing_bar {
     background-color: rgba(236, 0, 140, .6);
     /* animation: fill 14s linear 1 !important; */
+   
 }
-
 .growing_barA {
     background-color: rgba(236, 0, 140, .6);
 }
@@ -503,11 +505,9 @@ section article:last-of-type {
     background-color: purple !important;
     animation: filll 14s linear 1 !important;
 }
-
-.growingBarAnimation {
+.growingBarAnimation{
     background-color: purple !important;
 }
-
 @keyframes fill {
     0% {
         width: 0%;
@@ -527,7 +527,32 @@ section article:last-of-type {
         width: 100%;
     }
 }
-
+.progress-bar {
+    height: 4px;
+    background-color: rgba(5, 114, 206, 0.2);
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .progress-bar-value {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 114, 206);
+    animation: indeterminateAnimation 1s infinite linear;
+    transform-origin: 0% 50%;
+  }
+  
+  @keyframes indeterminateAnimation {
+    0% {
+      transform:  translateX(0) scaleX(0);
+    }
+    40% {
+      transform:  translateX(0) scaleX(0.4);
+    }
+    100% {
+      transform:  translateX(100%) scaleX(0.5);
+    }
+  }
 .alert {
     position: relative;
     margin-bottom: 1rem;
