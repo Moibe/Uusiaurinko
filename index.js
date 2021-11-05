@@ -109,15 +109,15 @@ const myClick = (e) => {
         $('.growing-bar').addClass('growing_bar')
         // $('.growing-bar').css('animation',`${timing}s linear 0s 1 normal none running fill`);
         $('.growing-bar').addClass('growing_barA')
+        $('.button-center').css('display','none');
+        $('.confetti__button').attr('disabled','false')
+        $('.confetti__button').css('cursor','default');
+        $('.button__text').css('background','grey');
         // e.setAttribute("disabled", "false")
         setTimeout(function () {
             $('#adddedSuccessfull').css('display', 'block')
             $('.growing-bar').css('animation', 'stop')
-            $('.button-center').css('display','none');
             $('#clickReturn').css('display','block');
-            $('.confetti__button').attr('disabled','false')
-            $('.confetti__button').css('cursor','default');
-            $('.button__text').css('background','grey');
             field1.value = '';
             field2.value = '';
             field3.value = '';
@@ -128,6 +128,10 @@ const myClick = (e) => {
         $('#barid').css('visibility', 'visible')
         $('.growing-bar').removeClass('growing_bar')
         $('.growing-bar').removeClass('growing_barA')
+        $('.button-center').css('display','none');
+        $('.confetti__button').attr('disabled','false')
+        $('.confetti__button').css('cursor','default');
+        $('.button__text').css('background','grey');
         // $('.growing-bar').css('animation',`${timing}s linear 0s 1 normal none running fill`);
         // e.setAttribute("disabled", "false")
 
@@ -136,11 +140,7 @@ const myClick = (e) => {
         setTimeout(function () {
             $('#adddedSuccessfull').css('display', 'block')
             $('.growing-bar').css('animation', 'asad')
-            $('.button-center').css('display','none');
             $('#clickReturn').css('display','block');
-            $('.confetti__button').attr('disabled','false')
-            $('.confetti__button').css('cursor','default');
-            $('.button__text').css('background','grey');
             field1.value = '';
             field2.value = '';
             field3.value = '';
