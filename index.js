@@ -1,6 +1,6 @@
 // use this variable to set the timing of progress bar
 let timing = 20;
-console.log("I'm here right now...");
+console.log("I'm there right now...");
 resultado = myFunction(); 
 console.log(resultado);
 const myInputOne = (e) => {
