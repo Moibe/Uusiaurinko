@@ -1,6 +1,6 @@
 // use this variable to set the timing of progress bar
 let timing = 20;
-console.log("Cambio 0");
+console.log("Cambio 1");
 resultado = myFunction(); 
 console.log(resultado);
 const myInputOne = (e) => {
@@ -125,7 +125,7 @@ const myClick = (e) => {
         //     field2.value = '';
         //     field3.value = '';
         // }, `${timing}000`)
-        stopProgressBar;
+        $('.growing-bar').css('animation', '')
     }
     //indeterminateAnimation 1s infinite linear;
     else {
