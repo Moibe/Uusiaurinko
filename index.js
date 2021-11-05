@@ -117,14 +117,14 @@ const myClick = (e) => {
         $('.confetti__button').css('cursor','default');
         $('.button__text').css('background','grey');
         // e.setAttribute("disabled", "false")
-        setTimeout(function () {
-            $('#adddedSuccessfull').css('display', 'block')
-            $('.growing-bar').css('animation', 'stop')
-            $('#clickReturn').css('display','block');
-            field1.value = '';
-            field2.value = '';
-            field3.value = '';
-        }, `${timing}000`)
+        // setTimeout(function () {
+        //     $('#adddedSuccessfull').css('display', 'block')
+        //     $('.growing-bar').css('animation', 'stop')
+        //     $('#clickReturn').css('display','block');
+        //     field1.value = '';
+        //     field2.value = '';
+        //     field3.value = '';
+        // }, `${timing}000`)
     }
     //indeterminateAnimation 1s infinite linear;
     else {
