@@ -1,6 +1,6 @@
 // use this variable to set the timing of progress bar
 let timing = 20;
-console.log("I'm there right now...");
+console.log("Cambio 0");
 resultado = myFunction(); 
 console.log(resultado);
 const myInputOne = (e) => {
@@ -125,6 +125,7 @@ const myClick = (e) => {
         //     field2.value = '';
         //     field3.value = '';
         // }, `${timing}000`)
+        stopProgressBar;
     }
     //indeterminateAnimation 1s infinite linear;
     else {
