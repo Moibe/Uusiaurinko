@@ -1,8 +1,5 @@
 // use this variable to set the timing of progress bar
 let timing = 20;
-console.log("Cambio 1");
-resultado = myFunction(); 
-console.log(resultado);
 const myInputOne = (e) => {
     document.getElementById('nameText').innerHTML = e.value;
     glass2.style.opacity = 1;
@@ -116,16 +113,16 @@ const myClick = (e) => {
         $('.confetti__button').attr('disabled','false')
         $('.confetti__button').css('cursor','default');
         $('.button__text').css('background','grey');
-        // e.setAttribute("disabled", "false")
-        // setTimeout(function () {
-        //     $('#adddedSuccessfull').css('display', 'block')
-        //     $('.growing-bar').css('animation', 'stop')
-        //     $('#clickReturn').css('display','block');
-        //     field1.value = '';
-        //     field2.value = '';
-        //     field3.value = '';
-        // }, `${timing}000`)
-        $('.growing-bar').css('animation', '')
+        e.setAttribute("disabled", "false")
+        setTimeout(function () {
+            $('#adddedSuccessfull').css('display', 'block')
+            $('.growing-bar').css('animation', 'stop')
+            $('#clickReturn').css('display','block');
+            field1.value = '';
+            field2.value = '';
+            field3.value = '';
+        }, `${timing}000`)
+        
     }
     //indeterminateAnimation 1s infinite linear;
     else {

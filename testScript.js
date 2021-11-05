@@ -1,6 +1,6 @@
 function myFunction() {
 
     let x = "Hello world"; 
-    return x;   // The function returns 182
+    return x;   // The function returns result to display.
   }
 
