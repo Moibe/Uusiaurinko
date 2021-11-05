@@ -1,7 +1,6 @@
-console.log("Example script is running.")
+function myFunction() {
 
-let x = "Hello world"; 
+    let x = "Hello world"; 
+    return x;   // The function returns 182
+  }
 
-setTimeout(() => {console.log("The process ends now after 15 seconds.")}, 15000);
-
-return x

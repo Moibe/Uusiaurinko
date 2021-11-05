@@ -1,6 +1,8 @@
 // use this variable to set the timing of progress bar
 let timing = 20;
 console.log("I'm here right now...");
+resultado = myFunction(); 
+console.log(resultado);
 const myInputOne = (e) => {
     document.getElementById('nameText').innerHTML = e.value;
     glass2.style.opacity = 1;
